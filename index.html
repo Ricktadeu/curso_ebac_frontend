@@ -1,217 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Formulário</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Meu portal de notícias</h1>
+    <h1>Formulário</h1>
+    <form onsubmit="return validarFormulario();">
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required><br><br>
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required><br><br>
 
-            <nav>
-                <ul>
+        <input type="submit" value="Submeter formulário">
+    </form>
+    <script src="main.js"></script>
 
-                    <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#clima" title="ir para a seção clima">Clima</a>
-                    </li>
-                    <li>
-                        <a href="#viagens" title="ir para a seção viagens">Viagens</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="sports">
-        <div class="container">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/clássico.png" alt="Cartaz com os clubes cruzeiro e atlético-mg" />
-                    <header>
-                        <time>10/06/2023 às 19h</time>
-                    </header>
-                    <h3>Grande clássico na noite de hoje</h3>
-                    <p>
-                        A noite de hoje promete ser memorável e repleto de rivalidade e emoção com o clássico Cruzeiro e
-                        Atlético-MG que agitará as torcidas
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/futebol americano.png" alt="anúncio da partida de futebol americano" />
-                    <header>
-                        <time>10/06/2023 às 21h</time>
-                    </header>
-                    <h3>Noite do Superbowl</h3>
-                    <p>
-                        Venha sentir a atmosfera eletrizante no estádio,a emoção estará no ar enquanto os jogadores
-                        colidem
-                        no
-                        campo,em busca da vitória.Não percam o contronto entre esses dois times imbatíveis.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/basquete.png" title="Vista aérea de uma quadra de basquete" />
-                    <header>
-                        <time>10/06/2023 às 10h</time>
-                    </header>
-                    <h3>Notícia sobre a NBA</h3>
-                    <p>
-                        Brooklyn,NY-Os Brooklyn Nets consagraram-se campeões da National Basketball Association (NBA) em
-                        uma
-                        final
-                        eletrizante contra Los Angeles Lakers.Realizado hoje pela manhã no Barclays Center.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="economy">
-        <div class="container">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dólares.png" alt="Muitos dólares" />
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
-                    <p>
-                        Em um movimento marcante,o dólar americano apresentou uma alta de 0,50% em relação às principais
-                        moedas
-                        globais durante as ultimas negociações.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/euro.png" alt="Várias notas de euro" />
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        O euro sofreu uma queda de 0,40% em relação ao dólar americano durante as últimas
-                        negociações,destacando
-                        uma mudança na dinâmica do mercado cambial.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/petroleo.png" alt="Extração de petróleo" />
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Os mercados globais de petróleo foram impactados por um aumento significativo no preço do barril
-                        de
-                        petróleo nos últimos dias,refletindo mudanças na oferta e na demanda.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="clima">
-        <div class="container">
-            <h2>Clima</h2>
-            <div class="articles">
-                <article>
-                    <img src="imagens/alagamento.png" alt="cidade alagada">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Chuva causa alagamento em pequena cidade</h3>
-                    <p>Uma chuva intensa e inesperada atingiu Belo Horizonte,causando um cenário de alagamentos
-                        generalizados.O
-                        evento climático,que ocorreu ontem por volta das 17h,pegou a populção de surpresa,resultadndo em
-                        transtornos significativos</p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/frio.png" alt="vilarejo com neve">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Frente fria no sul de Minas</h3>
-                    <p>
-                        As cidades de Monte Verde,Gonçalves e Campos do Jordão foram especialmente afetadas,registrando
-                        temperaturas próximas a -5°C durante a madrugada.Muitos moradores estão animados com a
-                        possibilidade de ver neve,algo raro na região
-                    </p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/calor.png" alt="Termômetro registrando temperatura alta">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Calor no norte de Minas</h3>
-                    <p>Cidades como Montes Claros,Janaúba e Pirapora registraram temperaturas acima dos 40°C nos últimos
-                        dias.A combinação de altas temperaturas e baixa umidade do ar torna o clima ainda mais
-                        desafiador,afetando a saúde e o bem-estar das pessoas.</p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="viagens">
-        <div class="container">
-            <h2>Viagens</h2>
-            <div class="articles">
-                <article>
-                    <img src="imagens/transporte coletivo.png" alt="estação de ônibus">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Reajuste nas passagens de ônibus</h3>
-                    <p>Passagens de ônibus terão reajuste a partir do próximo mês,impactando os usuários do transporte
-                        coletivo em todo o país.As empresas de ônibus anunciaram u aumento médio de 10% nas
-                        tarifas,devido a diversos fatores que impactaram os custos operacionais do setor.</p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/viagem de aviao.png" alt="avião pousando">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Viagens de avião em alta</h3>
-                    <p>Com o relaxamento das restrições de viagem e a retomada gradual do turismo,as viagens de avião
-                        estão em alta novamente.Milhares de passageiros estão aproveitando a oportunidade de explorar
-                        novos destinos e reecontrar familiares e amigos,impulsionando a indústria da aviação</p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="imagens/hotel.png" alt="um hotel 5 estrelas">
-                    <header>
-                        <time>10/06/2023 às 12:35</time>
-                    </header>
-                    <h3>Novo Hotel de luxo é inaugurado</h3>
-                    <p>No coração da cidade,um novo hotel foi inaugurado hoje,prometendo proporcionar uma experiência de
-                        luxo única para seus hóspedes.O hotel chamado "EcoLuxe",está repleto de tecnologia de ponta e
-                        foi projetado com um compromisso sério com a sustentabilidade</p>
-                    <a href="#" title="leia a notícia completa">Ler mais</a>
-                </article>
-
-            </div>
-        </div>
-
-    </section>
 </body>
 
 </html>
